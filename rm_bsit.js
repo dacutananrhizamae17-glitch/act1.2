@@ -1,9 +1,9 @@
-let studentName = "Dacutanan, Rhiza Mae";
+let studentName = "Dacutanan, Rhiza Mae J.";
 let age = 19;
 let course = "BSIT";
 
 let numbers = [1, 2, 3];
-let fruits = ["apple", "banana", "mango"];
+let fruits = ["apple", "banana", "strawberry"];
 let grades = [85, 90, 75];
 
 let student = { name: "Rhiza Mae", section: "BSIT3A" };
