@@ -1,18 +1,14 @@
-// Variables (3)
-let studentName = "Ortiz_YuriJoseph_BSCS4A";
-let age = 21;
-let course = "BSCS";
+let studentName = "Dacutanan, Rhiza Mae";
+let age = 19;
+let course = "BSIT";
 
-// Arrays (3)
 let numbers = [1, 2, 3];
 let fruits = ["apple", "banana", "mango"];
 let grades = [85, 90, 75];
 
-// Object Literals (2)
-let student = { name: "Yuri", section: "BSCS4A" };
+let student = { name: "Rhiza Mae", section: "BSIT3A" };
 let car = { brand: "Toyota", year: 2020 };
 
-// Classes (4) + Constructors (2) + Methods (5)
 class Person {
     constructor(name, age) { // Constructor 1
         this.name = name;
