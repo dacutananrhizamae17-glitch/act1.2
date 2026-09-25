@@ -10,37 +10,37 @@ let student = { name: "Rhiza Mae", section: "BSIT3A" };
 let car = { brand: "Toyota", year: 2020 };
 
 class Person {
-    constructor(name, age) { // Constructor 1
+    constructor(name, age) { 
         this.name = name;
         this.age = age;
     }
-    introduce() { // Method 1
+    introduce() { 
         console.log("Hi, I'm " + this.name);
     }
 }
 
-class Student extends Person { // Inheritance 1
-    constructor(name, age, course) { // Constructor 2
+class Student extends Person { 
+    constructor(name, age, course) { 
         super(name, age);
         this.course = course;
     }
-    study() { // Method 2
+    study() { 
         console.log(this.name + " is studying " + this.course);
     }
-    introduce() { // Polymorphism (override) Method 3
+    introduce() { 
         console.log("Hi, I'm " + this.name + " from " + this.course);
     }
 }
 
-class Teacher extends Person { // Inheritance 2
-    teach() { // Method 4
+class Teacher extends Person { 
+    teach() { 
         console.log(this.name + " is teaching.");
     }
 }
 
 class BankAccount {
-    #balance = 0; // Encapsulation 1 (private property)
-    deposit(amount) { // Method 5
+    #balance = 0; 
+    deposit(amount) { 
         this.#balance += amount;
     }
     getBalance() {
@@ -48,36 +48,35 @@ class BankAccount {
     }
 }
 
-// Encapsulation (2)
+
 class SecureData {
-    #secret = "hidden"; // private
+    #secret = "hidden"; 
     revealSecret() {
         return this.#secret;
     }
 }
 
-// Abstraction (1)
+
 function abstractExample() {
     console.log("This hides complex details.");
 }
 
-// Objects (4)
+
 let person1 = new Person("Ana", 30);
 let student1 = new Student("Yuri", 21, "BSCS");
 let teacher1 = new Teacher("Mr. Cruz", 40);
 let account1 = new BankAccount();
 
-// Conditionals (3)
 if (age > 18) {
     console.log(studentName + " is an adult.");
 } else {
     console.log(studentName + " is not an adult.");
 }
 
-if (course === "BSCS") {
-    console.log("Course is Computer Science.");
+if (course === "BSIT") {
+    console.log("Course is Information Technology.");
 } else {
-    console.log("Course is not Computer Science.");
+    console.log("Course is not Information Technology.");
 }
 
 if (grades[0] >= 80) {
@@ -86,7 +85,7 @@ if (grades[0] >= 80) {
     console.log("First grade is failing.");
 }
 
-// Loops (3)
+
 for (let i = 0; i < numbers.length; i++) {
     console.log("Number: " + numbers[i]);
 }
@@ -101,7 +100,7 @@ for (let grade of grades) {
     console.log("Grade: " + grade);
 }
 
-// Testing methods
+
 person1.introduce();
 student1.introduce(); 
 student1.study();
